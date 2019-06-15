@@ -1,0 +1,11 @@
+/Users/BradleyMorrison/Desktop/BST/bin/Debug/netcoreapp2.2/BST.deps.json
+/Users/BradleyMorrison/Desktop/BST/bin/Debug/netcoreapp2.2/BST.runtimeconfig.json
+/Users/BradleyMorrison/Desktop/BST/bin/Debug/netcoreapp2.2/BST.runtimeconfig.dev.json
+/Users/BradleyMorrison/Desktop/BST/bin/Debug/netcoreapp2.2/BST.dll
+/Users/BradleyMorrison/Desktop/BST/bin/Debug/netcoreapp2.2/BST.pdb
+/Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.csprojAssemblyReference.cache
+/Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.csproj.CoreCompileInputs.cache
+/Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.AssemblyInfoInputs.cache
+/Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.AssemblyInfo.cs
+/Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.dll
+/Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.pdb
