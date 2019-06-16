@@ -22,6 +22,7 @@ namespace BST
             // create nodes for each element and add to tree
             for (int i = 0; i < dataRand.Length; i++)
             {
+                Console.WriteLine("Node " + i + " created");
                 TreeInsertion(dataRand[i]);
             }
 
@@ -35,7 +36,7 @@ namespace BST
             for (int i = 0; i < max; i++)
             {
                 Random r = new Random();
-                int num = r.Next(1, 1000);
+                int num = r.Next(1, 10000);
 
                 randArray[i] = num;
             }
@@ -72,7 +73,7 @@ namespace BST
                     parentNode = curNode;
 
                     // traverse LEFT
-                    if (value < parentNode.value)
+                    if (value <= parentNode.value) //added <= to so that duplicates go to the left of the tree
                     {
                         curNode = curNode.leftChild;
 
