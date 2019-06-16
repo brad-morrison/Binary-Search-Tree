@@ -9,3 +9,14 @@
 /Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.AssemblyInfo.cs
 /Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.dll
 /Users/BradleyMorrison/Desktop/BST/obj/Debug/netcoreapp2.2/BST.pdb
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/bin/Debug/netcoreapp2.2/BST.deps.json
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/bin/Debug/netcoreapp2.2/BST.runtimeconfig.json
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/bin/Debug/netcoreapp2.2/BST.runtimeconfig.dev.json
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/bin/Debug/netcoreapp2.2/BST.dll
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/bin/Debug/netcoreapp2.2/BST.pdb
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/obj/Debug/netcoreapp2.2/BST.csprojAssemblyReference.cache
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/obj/Debug/netcoreapp2.2/BST.csproj.CoreCompileInputs.cache
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/obj/Debug/netcoreapp2.2/BST.AssemblyInfoInputs.cache
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/obj/Debug/netcoreapp2.2/BST.AssemblyInfo.cs
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/obj/Debug/netcoreapp2.2/BST.dll
+/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/obj/Debug/netcoreapp2.2/BST.pdb

@@ -17,14 +17,31 @@ namespace BST
         {
             // input data to be sorted into tree
             int[] data = new int[] {51, 34, 13, 99, 9, 15, 33, 20, 56, 78, 42, 96, 122, 533, 566, 623, 784, 998};
+            int[] dataRand = RandArray(200);
             
             // create nodes for each element and add to tree
-            for (int i = 0; i < data.Length; i++)
+            for (int i = 0; i < dataRand.Length; i++)
             {
-                TreeInsertion(data[i]);
+                TreeInsertion(dataRand[i]);
             }
+
+            Console.WriteLine("TREE CREATED");
         }
 
+        public static int[] RandArray(int max)
+        {
+            int[] randArray = new int[max];
+            
+            for (int i = 0; i < max; i++)
+            {
+                Random r = new Random();
+                int num = r.Next(1, 1000);
+
+                randArray[i] = num;
+            }
+            
+            return randArray;
+        }
         
         public static void TreeInsertion(int value) // Create Tree/Insert Node
         {
@@ -63,7 +80,7 @@ namespace BST
                         if (curNode == null)
                         {
                             parentNode.leftChild = tempNode;
-                            Console.WriteLine("Added node LEFT (depth: " + depth + " val: " + value + " childLeft: " + parentNode.leftChild + " childRight: " + parentNode.rightChild + ")");
+                            Console.WriteLine("Added node LEFT  (depth: " + depth + "   val: " + value + "  childLeft:  " + parentNode.leftChild + " childRight: " + parentNode.rightChild + ")");
                             return;
                         }
                     }
@@ -77,13 +94,14 @@ namespace BST
                         if (curNode == null)
                         {
                             parentNode.rightChild = tempNode;
-                            Console.WriteLine("Added node RIGHT (depth: " + depth + " val: " + value + " childLeft: " + parentNode.leftChild + " childRight: " + parentNode.rightChild + ")");
+                            Console.WriteLine("Added node RIGHT (depth: " + depth + "   val: " + value + "  childLeft:  " + parentNode.leftChild + " childRight:    " + parentNode.rightChild + ")");
                             return;
                         }
                     }
 
                     depth++;
                 }
+                
             }
         }
         

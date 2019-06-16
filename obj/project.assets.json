@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/BradleyMorrison/Desktop/BST/BST.csproj",
+      "projectUniqueName": "/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/BST.csproj",
       "projectName": "BST",
-      "projectPath": "/Users/BradleyMorrison/Desktop/BST/BST.csproj",
+      "projectPath": "/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/BST.csproj",
       "packagesPath": "/Users/BradleyMorrison/.nuget/packages/",
-      "outputPath": "/Users/BradleyMorrison/Desktop/BST/obj/",
+      "outputPath": "/Users/BradleyMorrison/Documents/GitHub/BinarySearchTree/Binary-Search-Tree/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
