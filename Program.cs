@@ -17,18 +17,20 @@ namespace BST
         {
             // input data to be sorted into tree
             int[] data = new int[] {51, 34, 13, 99, 9, 15, 33, 20, 56, 78, 42, 96, 122, 533, 566, 623, 784, 998};
-            int[] dataRand = RandArray(200);
+            int[] dataRand = RandArray(78);
             
             // create nodes for each element and add to tree
-            for (int i = 0; i < dataRand.Length; i++)
+            for (int i = 0; i < data.Length; i++)
             {
                 Console.WriteLine("Node " + i + " created");
-                TreeInsertion(dataRand[i]);
+                TreeInsertion(data[i]);
             }
 
             Console.WriteLine("TREE CREATED");
             Console.WriteLine("Min value of tree is " + SearchMin().value);
             Console.WriteLine("Max value of tree is " + SearchMax().value);
+            Node search = Search(33);
+            Console.WriteLine("Node: " + search + " Node value: " + search.value + "    Child Left: " + search.leftChild + "    Child Right: " + search.rightChild);
         }
 
         public static int[] RandArray(int max)
@@ -108,10 +110,38 @@ namespace BST
             }
         }
         
-        static Node Search(int key, int[] data) // Search through Tree
+        static Node Search(int value) // Search through Tree
         {
-            var root = 25;
-            return null;
+            Node curNode = new Node();
+
+            curNode = root;
+
+            while(true)
+            {
+                //if searching value is smaller -> go left
+                if (value < curNode.value)
+                {
+                    curNode = curNode.leftChild;
+                }
+                else if (value > curNode.value)
+                {
+                    curNode = curNode.rightChild;
+                }
+
+                // if fails
+                if (curNode == null)
+                {
+                    Console.WriteLine("Node not found");
+                    return null;
+                }
+
+                //if val = node value
+                if (value == curNode.value)
+                {
+                    Console.WriteLine("Node Found");
+                    return curNode;
+                }
+            }
         }
 
         public static Node SearchMin()
