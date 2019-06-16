@@ -17,7 +17,7 @@ namespace BST
         {
             // input data to be sorted into tree
             int[] data = new int[] {51, 34, 13, 99, 9, 15, 33, 20, 56, 78, 42, 96, 122, 533, 566, 623, 784, 998};
-            int[] dataRand = RandArray(20);
+            int[] dataRand = RandArray(200);
             
             // create nodes for each element and add to tree
             for (int i = 0; i < dataRand.Length; i++)
@@ -27,7 +27,8 @@ namespace BST
             }
 
             Console.WriteLine("TREE CREATED");
-            Console.WriteLine(SearchMin().value);
+            Console.WriteLine("Min value of tree is " + SearchMin().value);
+            Console.WriteLine("Max value of tree is " + SearchMax().value);
         }
 
         public static int[] RandArray(int max)
@@ -118,10 +119,12 @@ namespace BST
             Node parent = new Node();
             Node min = new Node();
 
+            // start from root
             parent = root;
 
             while(true)
             {
+                // loop through until left child of Node is empty
                 if (parent.leftChild == null)
                 {
                     min = parent;
@@ -130,6 +133,29 @@ namespace BST
                 else
                 {
                     parent = parent.leftChild;
+                }
+            }
+        }
+
+        public static Node SearchMax()
+        {
+            Node parent = new Node();
+            Node min = new Node();
+
+            // start from root
+            parent = root;
+
+            while(true)
+            {
+                // loop through until left child of Node is empty
+                if (parent.rightChild == null)
+                {
+                    min = parent;
+                    return min;
+                }
+                else
+                {
+                    parent = parent.rightChild;
                 }
             }
         }
