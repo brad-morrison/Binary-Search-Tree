@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BST
 {
@@ -12,17 +13,13 @@ namespace BST
         }
 
         public static Node root = null;
+        //public static List<Node> nodes = new List<Node>();
         public static bool treeExists = false;
 
         static void Main(string[] args)
         {
             loadMenu();
-
-            
-            //Console.WriteLine("Min value of tree is " + SearchMin().value);
-            //Console.WriteLine("Max value of tree is " + SearchMax().value);
-            //Node search = Search(33);
-            //Console.WriteLine("Node: " + search + " Node value: " + search.value + "    Child Left: " + search.leftChild + "    Child Right: " + search.rightChild);
+            //CreateTree(10);
         }
 
         public static void loadMenu()
@@ -32,13 +29,14 @@ namespace BST
             if (treeExists) {   treeExists_string = "TREE EXISTS";  }  else {  treeExists_string = "EMPTY"; }
 
             Console.WriteLine("\n Tree [" + treeExists_string + "]");
-            Console.WriteLine("\n\n Enter option: \n 1 - Create Tree \n 2 - Search Min Node \n 3 - Search Max Node \n 4 - Search Node");
+            Console.WriteLine("\n\n Enter option: \n 1 - Create Tree \n 2 - Search Min Node \n 3 - Search Max Node \n 4 - Search Node \n 5 - Clear Tree");
             UserOption();
         }
 
         public static void UserOption()
         {
             string option;
+            Console.WriteLine("\n");
             option = Console.ReadLine();
             int optionInt = Convert.ToInt32(option);
 
@@ -49,6 +47,12 @@ namespace BST
                         string a;
                         a = Console.ReadLine();
                         CreateTree(Convert.ToInt32(a));
+                        Console.WriteLine("\n\nPress any key to continue...");
+                        Console.ReadKey();
+                        /* foreach (Node n in nodes)
+                        {
+                            Console.WriteLine(n.value);
+                        }*/
                         break;
 
                 case 2: Console.Clear();
@@ -83,6 +87,12 @@ namespace BST
                         loadMenu();
                         break;
 
+                case 5: root = null;
+                        Console.Clear();
+                        treeExists = false;
+                        loadMenu();
+                        break;
+
                 default:    Console.Clear();
                             Console.WriteLine("Please enter an option between 1 and 5 \n\nPress and key to continue...");
                             Console.ReadKey();
@@ -103,7 +113,6 @@ namespace BST
 
                 randArray[i] = num;
             }
-            
             return randArray;
         }
 
@@ -114,8 +123,8 @@ namespace BST
             // create nodes for each element and add to tree
             for (int i = 0; i < dataRand.Length; i++)
             {
-                Console.WriteLine("Node " + i + " created");
                 TreeInsertion(dataRand[i]);
+                Console.WriteLine("Node " + i + " created");
             }
 
             Console.WriteLine("TREE CREATED");
@@ -160,6 +169,7 @@ namespace BST
                         if (curNode == null)
                         {
                             parentNode.leftChild = tempNode;
+                            //nodes.Add(parentNode.leftChild); // add to list for reference
                             Console.WriteLine("Added node LEFT  (depth: " + depth + "   val: " + value + "  childLeft:  " + parentNode.leftChild + " childRight: " + parentNode.rightChild + ")");
                             return;
                         }
@@ -174,6 +184,7 @@ namespace BST
                         if (curNode == null)
                         {
                             parentNode.rightChild = tempNode;
+                            //nodes.Add(parentNode.rightChild); // add to list for reference
                             Console.WriteLine("Added node RIGHT (depth: " + depth + "   val: " + value + "  childLeft:  " + parentNode.leftChild + " childRight:    " + parentNode.rightChild + ")");
                             return;
                         }
